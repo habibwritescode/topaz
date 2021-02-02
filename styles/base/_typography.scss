@@ -1,0 +1,22 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+
+  &-primary,
+  &-tertiary{
+    font-family: 'Playfair Display', serif;
+  }
+
+  &-primary{
+
+  }
+
+  &-secondary{
+  }
+
+  &-tertiary{
+    // font-family: 'Playfair Display', serif;
+  }
+}
