@@ -15,12 +15,16 @@ body{
   }
 
   &-secondary{
+    color: $color-secondary;
+    font-size: 2.4rem;
   }
 
   &-tertiary{
+    font-size: 3.2rem;
+    font-weight: 400;
   }
 }
 
-.header__paragraph{
+.paragraph{
   font-size: 1.6rem;
 }
