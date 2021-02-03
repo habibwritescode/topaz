@@ -1,0 +1,38 @@
+.section-about{
+  display: flex;
+  justify-content: center;
+  margin: 16.7rem 14rem 0 7.4rem;
+
+  &__image-box{
+    margin-right: 6.7rem;
+  }
+
+  &__image{}
+
+  &__text-box{
+    padding-top: 0.8rem;
+  }
+
+  &__heading{}
+
+  &__paragraph{
+    margin-top: 2rem;
+    margin-bottom: 6.2rem;
+  }
+
+  &__proof-box{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__proof{}
+
+  &__proof-number{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: $color-secondary;
+  }
+
+  &__proof-text{}
+
+}
