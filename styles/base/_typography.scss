@@ -10,13 +10,17 @@ body{
   }
 
   &-primary{
-
+    font-size: 4rem;
+    font-weight: 400;
   }
 
   &-secondary{
   }
 
   &-tertiary{
-    // font-family: 'Playfair Display', serif;
   }
+}
+
+.header__paragraph{
+  font-size: 1.6rem;
 }

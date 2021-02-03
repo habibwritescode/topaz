@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  padding: 4.6rem 6.6rem 0 13.9rem;
+
+  &__text-box{
+    max-width: 36.5rem;
+    margin:12.3rem 5.8rem 0 0;
+  }
+
+  &__paragraph{
+    margin: 3rem 0 6.1rem;
+  }
+
+  &__gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__image:nth-child(2){
+    margin: 0 2.2rem;
+  }
+}

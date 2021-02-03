@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header';
 import Nav from '../components/Navigation/Nav';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
       </Head>
       <Nav/>
+      <Header/>
       <main>
       
       </main>
