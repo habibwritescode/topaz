@@ -1,0 +1,60 @@
+.section-services{
+  display: flex;
+  justify-content: center;
+  margin: 20rem 0 0 10.4rem;
+
+  &__text{
+    margin-right: 9.6rem;
+  }
+
+  &__services-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.3rem;
+  }
+
+  &__services-one{
+    margin-bottom: 6.2rem;
+  }
+
+  &__services-one,
+  &__services-two{
+    display: flex;
+  }
+  // &__services-two{}
+
+  &__service:not(:last-child){
+    margin-right: 8.7rem;
+  }
+
+  &__icon-box{
+    border: 2px solid $color-secondary;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
+  }
+
+  &__icon{
+  }
+
+  &__sub-heading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 3rem 0 .8rem;
+  }
+
+  &__paragraph{
+    max-width: 30.2rem;
+  }
+
+  &__image-box{
+    margin-top: 3rem;
+  }
+
+  &__image{}
+
+}
