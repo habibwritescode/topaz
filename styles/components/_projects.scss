@@ -1,0 +1,19 @@
+.section-projects{
+  margin: 24.1rem 10rem 0;
+
+  &__heading-box{
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__gallery-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 0;
+  }
+
+  &__image{}
+
+
+}
