@@ -1,0 +1,44 @@
+.section-contact{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rem;
+  
+  &__map-box{
+    max-width: 92.6rem;
+
+    .map{
+      width: 100%;
+    }
+  }
+
+  &__form-box{
+    padding: 0rem 4.4rem;
+
+    .form{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.4rem;
+
+      &__input{
+        padding: 2rem;
+        width: 42.2rem;
+        background-color: #e5e5e5;
+        font-family: inherit;
+        font-size: 1.6rem;
+        border: none;
+        
+        &:not(:last-child){
+          margin-bottom: 2rem;
+        }
+        
+        &:last-child{
+          margin-bottom: 3.7rem;
+        }
+        
+        &::placeholder{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
