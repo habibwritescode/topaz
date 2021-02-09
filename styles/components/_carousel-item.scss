@@ -1,0 +1,23 @@
+.carousel-item{
+  width: 50.1rem;
+  padding: 3.5rem 6.1rem 6.2rem 3.3rem;
+
+&__image-and-text{
+  display: flex;
+  margin-bottom: 3.4rem;
+}
+&__image{
+  border-radius: 100px;
+  margin-right: 2.3rem;
+}
+&__text-box{
+  align-self: center;
+}
+&__main-head{
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+&__sub-head{}
+&__quote{}
+
+}

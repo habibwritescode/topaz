@@ -1,0 +1,15 @@
+.arrow-box{
+  padding: 3rem;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid $color-tertiary;
+  align-self: center;
+  
+  &:hover{
+    cursor: pointer;
+  }
+
+  .arrow{
+    color: white;
+  }
+}
