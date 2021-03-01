@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  background-color: $color-primary-light;
+  justify-content: space-between;
+  padding: 8.7rem 10.1rem 7.9rem 12.3rem;
+  color: white;
+  font-size: 2.4rem;
+
+  &__logo-box,
+  &__links-box,
+  &__contact-box,
+  &__social-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo-box {
+  }
+
+  &__logo {
+    font-size: 4rem;
+  }
+  &__copyright {
+  }
+
+  &__links-box {
+  }
+  &__link {
+  }
+
+  &__head {
+    color: $color-secondary;
+    margin-bottom: 2.9rem;
+    font-weight: 600;
+  }
+
+  &__contact-box {}
+  &__contact {}
+
+  &__social-box {
+  }
+  &__icons-box{
+    display: flex;
+  }
+  &__icon-box{
+    border: 2px solid $color-secondary;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    padding: 1rem;
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__icon {
+    height: 2.9rem;
+  }
+}
