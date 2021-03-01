@@ -1,0 +1,11 @@
+@keyframes slideFromRight {
+  0%{
+    opacity: 0;
+    transform: translate(20vw, 0);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}

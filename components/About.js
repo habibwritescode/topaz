@@ -1,4 +1,5 @@
 import Heading from "./Heading"
+import Counter from './Counter';
 
 const About = () => {
   return (
@@ -16,17 +17,17 @@ const About = () => {
         </p>
         <div className='section-about__proof-box'>
           <div className='section-about__proof'>
-            <p className='section-about__proof-number'>300</p>
+              <Counter className='section-about__proof-number' end={300}/>
             <p className='section-about__proof-text paragraph'>Projects completed</p>
           </div>
         
           <div className='section-about__proof'>
-            <p className='section-about__proof-number'>300</p>
+            <Counter className='section-about__proof-number' end={300}/>
             <p className='section-about__proof-text paragraph'>Satisfied customers</p>
           </div>
         
           <div className='section-about__proof'>
-            <p className='section-about__proof-number'>20</p>
+            <Counter className='section-about__proof-number' end={20}/>
             <p className='section-about__proof-text paragraph'>Awards won</p>
           </div>
         </div>

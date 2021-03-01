@@ -18,7 +18,22 @@
     align-items: center;
   }
 
-  &__image:nth-child(2){
-    margin: 0 2.2rem;
+  &__image{
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
+    &--2{
+      animation-delay: .5s;
+    }
+
+    &--3{
+      animation-delay: 1s;
+    }
+    &:nth-child(2){
+      margin: 0 2.2rem;
+    }
   }
+
 }

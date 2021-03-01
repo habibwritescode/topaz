@@ -14,9 +14,9 @@ const Header = () => {
         {/* <Image className='header__image' src="/images/inside-weather.png" width={249.74} height={663} /> */}
         {/* <Image className='header__image' src="/images/minh-pham.png" width={250.87} height={584} alt=""/> */}
         {/* <Image className='header__image' src="/images/minh-pham2.png" width={249.74} height={490} alt=""/> */}
-        <img src="/images/inside-weather.png" className='header__image' alt=""/>
-        <img src="/images/minh-pham.png" className='header__image' alt=""/>
-        <img src="/images/minh-pham2.png" className='header__image' alt=""/>
+        <img src="/images/inside-weather.png" className='header__image header__image--1' alt=""/>
+        <img src="/images/minh-pham.png" className='header__image header__image--2' alt=""/>
+        <img src="/images/minh-pham2.png" className='header__image header__image--3' alt=""/>
       </div>
     </header>
   )
