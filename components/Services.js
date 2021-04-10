@@ -2,7 +2,7 @@ import Heading from './Heading';
 
 const Services = () => {
   return (
-    <section className='section-services'>
+    <section className='section-services' id='services'>
       <div className='section-services__text'>
         <Heading main={'Services'} sub={'What we do'} />
         <div className='section-services__services-box'>

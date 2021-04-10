@@ -3,7 +3,7 @@ import Counter from './Counter';
 
 const About = () => {
   return (
-    <section className='section-about'>
+    <section className='section-about' id='about'>
       <div className='section-about__image-box'>
         <img className='section-about__image' src="/images/hutomo-abrianto.png" alt=""/>
       </div>

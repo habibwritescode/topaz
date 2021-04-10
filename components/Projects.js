@@ -3,7 +3,7 @@ import Heading from './Heading'
 
 const Projects = () => {
   return (
-    <section className='section-projects'>
+    <section className='section-projects' id='projects'>
       <div className='section-projects__heading-box'>
         <Heading main={'Projects'} sub={'Latest projects'} />
       </div>

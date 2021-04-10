@@ -3,7 +3,7 @@ import Heading from "./Heading"
 
 const Contact = () => {
   return (
-    <section className='section-contact'>
+    <section className='section-contact' id='contact'>
       <div className='section-contact__map-box'>
         <img className='map' src="/images/map.png" alt=""/>
       </div>

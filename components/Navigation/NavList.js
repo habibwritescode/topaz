@@ -8,11 +8,11 @@ const NavList = (props) => {
       className={`nav-list ${open ? 'nav-list--open' : 'nav-list--close'}`}
       onClick={closeNavOnLinkClick}
       >
-        <li className='nav-list__item'><Link href='/#'><a className='nav-list__link' id='link'>Home</a></Link></li>
-        <li className='nav-list__item'><Link href='/#'><a className='nav-list__link' id='link'>About</a></Link></li>
-        <li className='nav-list__item'><Link href='/#'><a className='nav-list__link' id='link'>Services</a></Link></li>
-        <li className='nav-list__item'><Link href='/#'><a className='nav-list__link' id='link'>Works</a></Link></li>
-        <li className='nav-list__item'><Link href='/#'><a className='nav-list__link' id='link'>Contact</a></Link></li>
+        <li className='nav-list__item'><Link href='/'><a className='nav-list__link' id='link'>Home</a></Link></li>
+        <li className='nav-list__item'><Link href='/#about'><a className='nav-list__link' id='link'>About</a></Link></li>
+        <li className='nav-list__item'><Link href='/#services'><a className='nav-list__link' id='link'>Services</a></Link></li>
+        <li className='nav-list__item'><Link href='/#projects'><a className='nav-list__link' id='link'>Works</a></Link></li>
+        <li className='nav-list__item'><Link href='/#contact'><a className='nav-list__link' id='link'>Contact</a></Link></li>
       </ul>
     )
 }
