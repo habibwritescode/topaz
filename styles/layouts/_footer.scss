@@ -1,10 +1,28 @@
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-areas: 'lg ul c fu';
   background-color: $color-primary-light;
   justify-content: space-between;
   padding: 8.7rem 10.1rem 7.9rem 12.3rem;
   color: white;
+  row-gap: 3.9rem;
   font-size: 2.4rem;
+  
+  @include respond(tab-land){
+    grid-template-areas: 'lg ul c' 'fu fu fu';
+  }
+  
+  @include respond(tab-port){
+    grid-template-areas: 'lg ul' 'c fu';
+  }
+  
+  @include respond(phone){
+    grid-template-areas: 'lg' 'ul' 'c' 'fu';
+    justify-content: center;
+
+    padding-top: 3.2rem;
+    padding-bottom: 2.6rem;
+  }
 
   &__logo-box,
   &__links-box,
@@ -12,36 +30,47 @@
   &__social-box {
     display: flex;
     flex-direction: column;
-  }
 
-  &__logo-box {
+    @include respond(phone){
+      text-align: center;
+    }
   }
 
   &__logo {
     font-size: 4rem;
-  }
-  &__copyright {
+    margin-bottom: 1.5rem;
+    
+    @include respond(phone){
+      margin-bottom: .6rem;
+    }
   }
 
-  &__links-box {
-  }
-  &__link {
+  &__link,
+  &__contact{
+    margin-bottom: 1.7rem;
+
+    &:not(:last-child){
+      @include respond(phone){
+        margin-bottom: 1.6rem;
+      }
+    }
   }
 
   &__head {
     color: $color-secondary;
     margin-bottom: 2.9rem;
     font-weight: 600;
+
+    @include respond(phone){
+      margin-bottom: 1.8rem;
+    }
   }
 
-  &__contact-box {}
-  &__contact {}
-
-  &__social-box {
-  }
   &__icons-box{
     display: flex;
+    margin: 0 auto;
   }
+
   &__icon-box{
     border: 2px solid $color-secondary;
     border-radius: 100px;

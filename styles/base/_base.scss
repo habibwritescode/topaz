@@ -9,6 +9,27 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%;  // 1 rem = 10px; 10px/16px * 100
+
+  // The order of the below is dependent on whether mobile first or desktop first.
+  // When a viewport is less than two breakpoints, both breakpoints are applied, 
+  // but the one which comes last in the order takes more precedence.
+  // The below is desktop first
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px; 12px/16px
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // // 1rem = 9px; 9px/16px
+  }
+  
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px; 8px/16px
+  }
+  
+  // @include respond(phone) {
+  //   font-size: 50%; // 1rem = 8px; 8px/16px
+  // }
+
   scroll-behavior: smooth;
 }
 
