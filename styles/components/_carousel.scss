@@ -1,4 +1,24 @@
-.arrow-button-container{
-  display: flex;
-  align-items: center; 
+.rec-carousel{
+  position: relative;
+}
+
+.left-arrow{
+  position: absolute;
+  left: 0;
+}
+
+.right-arrow{
+  position: absolute;
+  right: 0;
+}
+
+.arrow-rel{
+
+  & > .left-arrow{
+    left: 2rem;
+  }
+
+  & > .right-arrow{
+    right: 2rem;
+  }  
 }
