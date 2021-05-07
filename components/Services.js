@@ -9,14 +9,14 @@ const Services = () => {
           <div className='section-services__services-one'>
             <div className='section-services__service'>
               <div className='section-services__icon-box'>
-              <img className='section-services__icon' src="/icons/home.png" alt=""/>
+              <img className='section-services__icon' src="/icons/home.svg" alt=""/>
               </div>
               <h4 className='section-services__sub-heading'>Residential design</h4>
               <p className='section-services__paragraph paragraph'>Some quick example text to build on the card title and make up the bulk of the card's content.  make up the bulk of the card's content. Some quick example text to build on the card</p>
             </div>
             <div className='section-services__service'>
               <div className='section-services__icon-box'>
-              <img className='section-services__icon' src="/icons/shopping-cart.png" alt=""/>
+              <img className='section-services__icon' src="/icons/shopping-cart.svg" alt=""/>
               </div>
               <h4 className='section-services__sub-heading'>Ecommerce design</h4>
               <p className='section-services__paragraph paragraph'>Some quick example text to build on the card title and make up the bulk of the card's content.  make up the bulk of the card's content. Some quick example text to build on the card</p>
@@ -27,14 +27,14 @@ const Services = () => {
           <div className='section-services__services-two'>
             <div className='section-services__service'>
               <div className='section-services__icon-box'>
-              <img className='section-services__icon' src="/icons/briefcase.png" alt=""/>
+              <img className='section-services__icon' src="/icons/briefcase.svg" alt=""/>
               </div>
               <h4 className='section-services__sub-heading'>Office design</h4>
               <p className='section-services__paragraph paragraph'>Some quick example text to build on the card title and make up the bulk of the card's content.  make up the bulk of the card's content. Some quick example text to build on the card</p>
             </div>
             <div className='section-services__service'>
               <div className='section-services__icon-box'>
-              <img className='section-services__icon' src="/icons/repeat.png" alt=""/>
+              <img className='section-services__icon' src="/icons/repeat.svg" alt=""/>
               </div>
               <h4 className='section-services__sub-heading'>Revamp</h4>
               <p className='section-services__paragraph paragraph'>Some quick example text to build on the card title and make up the bulk of the card's content.  make up the bulk of the card's content. Some quick example text to build on the card</p>
