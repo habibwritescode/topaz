@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const Button = ({name, href}) => {
+const Button = ({name, href, classN}) => {
   return (
     <Link href={`./${href}`}>
-      <a className='button'>{name}</a>
+      <a className={`button ${classN}`}>{name}</a>
     </Link>
   )
 }

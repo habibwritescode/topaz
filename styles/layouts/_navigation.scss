@@ -2,34 +2,65 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.3rem 9rem;
+  height: 100px;
+  padding-left: 15.1rem;
+  padding-right: 14rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  position: relative;
+  
+  @include respond(tab-land){
+    padding-left: 10rem;
+    padding-right: 9rem;
+  }
 
+  @include respond(tab-port){
+    padding-left: 7rem;
+    padding-right: 6rem;
+  }
+
+  @include respond(phone){
+    padding-left: 6.25rem;
+  }
+
+  @include respond(sm-phone){
+    padding-left: 3.125rem;
+  }
+  
   .logo{
     text-decoration: none;
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     color: $color-primary;
+
+    @include respond(tab-port){
+      font-size: 3.75rem;
+    }
+
+    @include respond(sm-phone){
+      font-size: 3rem;
+    }
   }
 }
 
 .burger-container{
+
   .burger{
     width: 2rem;
     height: 2rem;
-    position: fixed;
-    // top: 1.5rem;
-    right: 2rem;
+    right: 3.375rem;
     z-index: 1000;
     display: none;
-  
+    
     @media (max-width: 768px) {
+      top: 50%;
+      transform: translate(0, -50%);
+      position: absolute;
       display: flex;
       justify-content: space-around;
       flex-flow: column nowrap;    
     }
   }
-  
+
   .bar{
     width: 2rem;
     height: 0.25rem;
@@ -50,44 +81,46 @@
       }
     }
   
-  &-close{
-    &:nth-child(1){
-      transform: rotate(0);
-    }
-    &:nth-child(2){
-      transform: translateX(0);
-        opacity: 1;
-    } 
-    &:nth-child(2){
+    &-close{
+      &:nth-child(1){
         transform: rotate(0);
-    }
+      }
+      &:nth-child(2){
+        transform: translateX(0);
+          opacity: 1;
+      } 
+      &:nth-child(2){
+          transform: rotate(0);
+      }
     }
   
     &-open--color{
       background-color: $color-secondary;
     }
+
     &-close--color{
       background-color: #333;
     }
   }
-
+  
   .nav-list{
     display: flex;
     flex-flow: row nowrap;
     font-size: 1.6rem;
     font-weight: 500;
-    // font-size: 1.2em;
-    // margin: 20px 0;
-
+    
     &__item{
       list-style: none;
-      text-decoration: none;
       
       &:not(:last-child){
         margin-right: 2.5rem;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
       }
     }
-
+    
     &__link{
       text-decoration: none;
 
@@ -103,17 +136,20 @@
     }
 
     @media (max-width: 768px) {
-    
       align-items: center;
       flex-flow: column nowrap;
+      justify-content: space-evenly;
+      font-family: 'Playfair Display', serif;;
       background-color: $color-tertiary;
       position: fixed;
-      top: -2rem;
+      font-size: 3rem;
+      top: 0;
       right: 0;
-      height: 100vh;
+      height: 100%;
       width: 300px;
       padding-top: 3.5rem;
       transition: transform 0.3s ease-in-out;
+      z-index: 1;
   
       &--open{
         transform: translateX(0);
@@ -124,4 +160,9 @@
       }
     }
   }
+}
+
+.nav-list--open + .burger{
+  position: fixed;
+  top: 6rem;
 }

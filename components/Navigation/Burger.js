@@ -6,12 +6,12 @@ const Burger = () => {
 
     return (
         <div className='burger-container'>
+            <NavList closeNavOnLinkClick={(e) => e.target.id === 'link' && setOpen(!open)} open={open} />
             <div className='burger' onClick={() => setOpen(!open)}>
                 <div className={`bar ${open ? 'bar-open bar-open--color' : 'bar-close bar-close--color'}`} />
                 <div className={`bar ${open ? 'bar-open bar-open--color' : 'bar-close bar-close--color'}`} />
                 <div className={`bar ${open ? 'bar-open bar-open--color' : 'bar-close bar-close--color'}`} />
             </div>
-            <NavList closeNavOnLinkClick={(e) => e.target.id === 'link' && setOpen(!open)} open={open} />
         </div>
     )
 }

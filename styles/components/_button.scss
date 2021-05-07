@@ -1,11 +1,38 @@
 .button{
   font-size: 2.4rem;
   font-weight: 700;
-  padding: 2.2rem;
   text-align: center;
   text-decoration: none;
   background-color: $color-secondary;
   color: #fff;
   display: inline-block;
+  height: 8rem;
   width: 27.8rem;
+  
+  @include respond(tab-port){
+    font-size: 1.5rem;
+    height: 6rem;
+    width: 19rem;
+  }
+
+  @include respond(phone){
+    height: 5.875rem;
+    width: 20.25rem;
+  }
+}
+
+.header__button{
+  padding: 2.2rem 5.5rem 2.2rem 7rem;
+
+  @include respond(tab-port){
+    padding: 2rem 5.25rem 2.125rem 4.125rem;
+  }
+}
+  
+.form__button{
+  padding: 2.5rem 5.4rem 1.9rem 4.6rem;
+
+  @include respond(tab-port){
+    padding: 1.97rem 1.97rem 2.16rem 2.8rem;
+  }
 }

@@ -6,7 +6,7 @@ const Header = () => {
       <div className='header__text-box'>
         <h1 className='heading-primary'>Live beautifully and comfortably</h1>
         <p className='header__paragraph paragraph'>We design beautiful interiors that are very comfortable</p>
-        <Button classN='header__button' name={'Our projects'}/>
+        <Button classN='header__button' name={'Our projects'} href='#projects'/>
       </div>
 
       <div className='header__gallery'>

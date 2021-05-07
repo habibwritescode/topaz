@@ -15,7 +15,7 @@ const Contact = () => {
           <input className='form__input' type="text" placeholder='Name' />
           <input className='form__input' type="email" placeholder='Email' />
           <textarea className='form__input form__textarea' name="" id="" placeholder='Message' cols="30" rows="6"></textarea>
-          <Button classN='form__button' name={'Send Message'} />
+          <Button classN='form__button' name={'Send Message'} href='#' />
         </form>  
       </div>      
     </section>
