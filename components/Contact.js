@@ -14,12 +14,10 @@ const Contact = () => {
         <form action="" className='form'>
           <input className='form__input' type="text" placeholder='Name' />
           <input className='form__input' type="email" placeholder='Email' />
-          <textarea className='form__input' name="" id="" placeholder='Message' cols="30" rows="6"></textarea>
-          <Button name={'Send Message'} />
+          <textarea className='form__input form__textarea' name="" id="" placeholder='Message' cols="30" rows="6"></textarea>
+          <Button classN='form__button' name={'Send Message'} />
         </form>  
-      </div>
-
-      
+      </div>      
     </section>
   )
 }

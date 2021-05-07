@@ -2,12 +2,34 @@
   display: flex;
   align-items: center;
   margin-bottom: 30rem;
+
+  @media only screen and(max-width:50em){
+    flex-direction: column;
+  }
+  
+  @include respond(sm-phone) {
+    margin-bottom: 13.59rem;
+  }
   
   &__map-box{
-    max-width: 92.6rem;
-
+    height: 69.6rem;
+    
     .map{
+      height: 100%;
       width: 100%;
+      object-fit: cover;
+    }
+    
+    @media only screen and(max-width:50em){
+
+      height: auto;
+      width: 90vw;
+      margin-bottom: 4.5rem;
+    }
+
+    @include respond(phone){
+      width: 100vw;
+      margin-bottom: 2.625rem;
     }
   }
 
@@ -18,25 +40,37 @@
       display: flex;
       flex-direction: column;
       margin-top: 2.4rem;
-
+      
       &__input{
-        padding: 2rem;
+        padding: 2rem 0 2.1rem 2.2rem;
         width: 42.2rem;
         background-color: #e5e5e5;
         font-family: inherit;
         font-size: 1.6rem;
         border: none;
-        
-        &:not(:last-child){
-          margin-bottom: 2rem;
-        }
-        
-        &:last-child{
-          margin-bottom: 3.7rem;
-        }
+        margin-bottom: 2rem;
         
         &::placeholder{
-          font-weight: 600;
+          color: #000;
+          font-size: 1.6rem;
+        }
+        
+        @include respond(sm-phone) {
+          margin-bottom: 1.43rem;
+          padding: 0.965rem 0 1.97rem 1.67rem;
+          width: 33.148rem;
+          
+          &::placeholder{
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      &__textarea{
+        margin-bottom: 3.75rem;
+
+        @include respond(sm-phone){
+          margin-bottom: 2.64rem;
         }
       }
     }
