@@ -1,23 +1,76 @@
 .section-about{
   display: flex;
   justify-content: center;
-  margin: 16.7rem 14rem 0 7.4rem;
+  margin: 0 14rem 20.1rem 7.4rem;
+  
+  @include respond(tab-port){
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 10.125rem;
+  }
+
+  @include respond(phone){
+    margin-right: 3.375rem;
+    margin-left: 3.125rem;
+    align-items: flex-start;
+  }
 
   &__image-box{
     margin-right: 6.7rem;
+    max-width: 51.3rem;
+    height: 40.3rem;
+
+    @include respond(tab-port){
+      width: 100%;
+      margin: 0 0 6rem 0;
+    }
+
+    @include respond(sm-phone){
+      height: 32.375rem;
+      margin-bottom: 4.5rem;
+    }
   }
-
-  &__image{}
-
+  
+  &__image{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
   &__text-box{
-    padding-top: 0.8rem;
+    max-width: 64.6rem;
+    margin-top: 0.8rem;
+    flex: 0 1 64.6rem;
+    
+    @include respond(tab-port){
+      flex: 0;
+    }
+    
+    @include respond(sm-phone){
+      margin-top: 0;
+      padding-left: 1.125rem;
+    }
   }
-
-  &__heading{}
 
   &__paragraph{
     margin-top: 2rem;
     margin-bottom: 6.2rem;
+
+    @media only screen and(max-width:88.125em){
+      margin-bottom: 4rem;
+    }
+
+    @include respond(tab-port){
+      margin: 1.125rem 0 6.75rem;
+    }
+
+    @include respond(phone){
+      width: 80vw;
+    }
+
+    @include respond(sm-phone){
+      width: 39.25rem;
+    }
   }
 
   &__proof-box{
@@ -25,14 +78,21 @@
     justify-content: space-around;
   }
 
-  &__proof{}
-
   &__proof-number{
     font-size: 3.2rem;
     font-weight: 600;
     color: $color-secondary;
+
+    @include respond(tab-port){
+      font-size: 3rem;
+      margin-bottom: 2.5rem;
+    }
   }
 
-  &__proof-text{}
+  &__proof-text{
 
+    @include respond(phone){
+      width: 9rem;
+    }
+  }
 }
