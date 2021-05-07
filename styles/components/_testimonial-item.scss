@@ -1,0 +1,46 @@
+.testimonial-item{
+  width: 50.1rem;
+  padding: 0 6.1rem 0 3.3rem;
+  
+  @include respond(phone){
+    width: 100vw;
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
+
+  @include respond(sm-phone){
+    padding: 0 3.5rem 0 4rem;
+  }
+
+  &__image-and-text{
+    display: flex;
+    margin-bottom: 3.4rem;
+
+    @include respond(sm-phone){
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__image{
+    border-radius: 100px;
+    margin-right: 2.3rem;
+
+    @include respond(sm-phone){
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+  }
+
+  &__text-box{
+    align-self: center;
+  }
+
+  &__main-head{
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    @include respond(sm-phone){
+      font-size: 2rem;
+    }
+  }
+}
