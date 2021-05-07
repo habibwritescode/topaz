@@ -44,6 +44,7 @@
     
     @include respond(tab-port){
       flex: 0;
+      padding-left: 2.125rem;
     }
     
     @include respond(sm-phone){
