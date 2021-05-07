@@ -19,6 +19,7 @@
   @include respond(phone){
     grid-template-areas: 'lg' 'ul' 'c' 'fu';
     justify-content: center;
+    font-size: 2rem;
 
     padding-top: 3.2rem;
     padding-bottom: 2.6rem;
@@ -84,9 +85,18 @@
     &:not(:last-child){
       margin-right: 1.5rem;
     }
-  }
 
+    @include respond(phone){
+      width: 4.625rem;
+      height: 4.625rem;
+    }
+  }
+  
   &__icon {
     height: 2.9rem;
+
+    @include respond(phone){
+      height: 1.875rem;
+    }
   }
 }

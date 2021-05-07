@@ -25,13 +25,13 @@ const Footer = () => {
         <span className="footer__head">Follow us</span>
         <div className='footer__icons-box'>
           <div className='footer__icon-box'>
-            <img src="icons/facebook.png" alt="" className="footer__icon"/>
+            <img src="icons/facebook.svg" alt="" className="footer__icon"/>
           </div>
           <div className='footer__icon-box'>
-            <img src="icons/instgram.png" alt="" className="footer__icon"/>
+            <img src="icons/instagram.svg" alt="" className="footer__icon"/>
           </div>
           <div className='footer__icon-box'>
-            <img src="icons/twitter.png" alt="" className="footer__icon"/>
+            <img src="icons/twitter.svg" alt="" className="footer__icon"/>
           </div>
         </div>
       </div>
