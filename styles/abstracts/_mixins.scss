@@ -1,12 +1,14 @@
 //MEDIA QUERY MANAGER
 /*
-0 - 600 Phone
+0 - 375 Small phone
+375 - 600 Phone
 600 - 900 Tablet portrait
 900- 1200px Tablet landscape
 1200 - 1800 Where our normal styles are being applied
 1800 - ... Big desktop  min-width for this
 
 $breakpoint argument choices from the above:
+- sm-phone
 - phone
 - tab-port
 - tab-land
@@ -16,6 +18,10 @@ ORDER: Base, typography > general layout(header, footer, nav), grid > page layou
 */
 
 @mixin respond($breakpoint){
+  @if $breakpoint == sm-phone {
+    @media only screen and (max-width: 23.44em){@content};  // 375pxx
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em){@content};  // 600px
   }

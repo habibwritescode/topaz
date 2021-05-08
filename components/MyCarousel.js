@@ -20,7 +20,7 @@ const MyCarousel = ({arrowWhite, items, children}) => {
       pagination={false}
       itemsToShow={items}
       renderArrow={myArrow}
-      outerSpacing={20}
+      outerSpacing={30}
       breakPoints={[
         { width: 1, itemsToShow: 1, outerSpacing: 0},
         { width: 768, itemsToShow: 2 }

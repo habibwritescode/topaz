@@ -14,12 +14,24 @@
     margin-bottom: 4rem;
   }
 
+  &__carousel-box{
+    display: none;
+
+    @include respond(phone){
+      display: block;
+    }
+  }
+
   &__gallery-container{
     max-width: 123.6rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 0 0;
+    
+    @include respond(phone){
+      display: none;
+    }
   }
 
   &__image{

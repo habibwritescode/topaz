@@ -5,17 +5,17 @@
 @import 
   './base/animations',
   './base/typography',
-  './base/utilities',
   './base/base';
 
 @import
 './components/about',
 './components/arrow-button',
-'./components/carousel-item',
+'./components/testimonial-item',
 './components/carousel',
 './components/contact',
 './components/services',
 './components/projects',
+'./components/project-carousel',
 './components/testimonials',
   './components/button';
 
