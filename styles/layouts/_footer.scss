@@ -20,9 +20,8 @@
     grid-template-areas: 'lg' 'ul' 'c' 'fu';
     justify-content: center;
     font-size: 2rem;
-
-    padding-top: 3.2rem;
-    padding-bottom: 2.6rem;
+    padding: 3.2rem 0 2.6rem 0;
+    padding-right: 0;
   }
 
   &__logo-box,
